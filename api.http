@@ -2,7 +2,7 @@
 GET http://localhost:1234/movies
 
 ### Recuperar una película por id
-GET http://localhost:1234/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+GET http://localhost:1234/movies/bc3d2c84-f6d2-11ef-a108-18c04d6f7e2f
 
 ### Recuperar todas las películas por un género
 GET http://localhost:1234/movies?genre=ACTION
@@ -20,18 +20,21 @@ Content-Type: application/json
   "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
   "genre": [
     "Crime",
-    "Drama"
+    "Drama",
+    "Action",
+    "Stream"
   ]
 }
 
 ### Actualizar una película
-PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:1234/movies/bc3d2c84-f6d2-11ef-a108-18c04d6f7e2f
 Content-Type: application/json
 
 {
-  "year": 2022
+  "year": 2024,
+  "genre": ["Crime"]
 }
 
 
 ### Eliminar pelicula
-DELETE http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+DELETE http://localhost:1234/movies/b86a715d-f874-11ef-a108-18c04d6f7e2f

@@ -5,14 +5,15 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "standard && node my-tests.js",
-    "lint": "standard --fix"
+    "start:mysql": "node --watch server-with-mysql.js",
+    "start:local": "node --watch server-with-local.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "4.18.2",
+    "mysql2": "^3.12.0",
     "zod": "3.21.4"
   },
   "devDependencies": {
